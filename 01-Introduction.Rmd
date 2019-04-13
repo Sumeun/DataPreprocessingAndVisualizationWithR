@@ -1,0 +1,37 @@
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+linespread <- 1.2; save(linespread, file='linespread.RData')
+options(max.print=40) # 10 per line * 4line = 40
+```
+
+# Introduction
+
+How things are down in computers are simple in a persepective. Computers get data as **input**, **process** it, and **output** the results.
+
+```{}
+Input - Process - Output
+```
+
+**Variables** are needed to store the values **inputed**. `Input-Process-Output` can be repeated for a certain times or until some of conditions are satisfied. **Flow controls** are used for these **repetitions** and **conditions**.
+
+Let us think about a program that gets a value as an input, multiplies it, and outputs the result. A value can be any value depending on the needs or requirements of the user, so the value are stored in a variable. And another variable is assigned to a value that is a result of multiplication of 7 and the input and outputs the variable. (**Variables** get rid of the needs to make multiple programs that can do multiplication of 2 and 7, and multiplication of 3 and 7, and so on.
+
+What if we want to make a program that outputs a sum of integers from one to a certain integer? Firstly, get an integer as an input. But be cautious here. Users are not garaunteed to input only integers. Users might input negative numbers or characters. So if the condition that the input is an integer is crucial for the program to run properly, we need to check if the number is an integer and get another input if not. Doing this repeated requires **flow control**. If the input is indeed an integer, we store it in a variable, and we need to sum from 1 to the value stored in the variable. If there is a function that can sum one to a certain integer, we can use it but it there is not such a function, we can repeat add integers from one to a certain number. **Flow control** is used here for repetition.
+
+A program as simple as just summing integers from one to a certain integer needs conditions and repetitions in getting input and processing.
+
+Let us summarise. A programs for data analysis has a basic structure of "**Input** - **Process** - **Output**" and requires some **Flow Control** in addition. How simple is it?
+
+## R 
+
+* R is made by statistics professors, Ross Ihaka and Robert Gentleman in 1993. It is a successor of statistical programming languages like S and S+, but it is **free** and is developed as **Open Source Project**. So anyone can download it from the internet and verify or modify the source if needed.
+
+* R is a free software in constrast to other statistical analysis programs like SPSS, SAS, Stata which usually cost thousands of dollars. Most commercial programs are developed by a few programmers and the sources are kept secret so other can not look at it and verify it. If there is any error, customers need to wait for programmers to fix it. But the source code of R is wide open for anyone to look at and to verify. And anyone that is capable can fix it.
+
+* Statistics, machine learning, and data science is being developed at this moment. To use commercial softwares for newly developed methods, we need to wait for software companies to incorporate the newly-developed method to their softward, and purchase the add-ins. But in most cases, those newly-developed methods are packed into R packages and open to anyone so anyone can use R to verify it.
+
+* R as a statistical programming language has these features.
+    - **Interpreter language** : Programming languages can be categorised into a compiler language and a interpreter langauge. Complier language compiles the source code to an assembly language that computers can understand and run it. Interpreter languages interpret the source code line by line and run it accordingly.
+	- **Object-Oriented language** : Functions of R is dependent on the class of the object inputed. Futhermore, R supports objects like S3 and S4.
+	- **Functional language** : R can use functions as arguments of functions, and R can return functions for funtions.
+    
