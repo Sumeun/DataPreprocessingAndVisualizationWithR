@@ -1,0 +1,59 @@
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+backtick='`'
+```
+
+\linespread{1.3}\selectfont
+
+\thispagestyle{empty}
+
+# Preface {-}
+
+I guess it was 4 or 5 years ago when I first started writing a book on R. I took a lecture on R at the Center for Social Sciences in Seoul National University then. I had done a lot of research using R, and had much experience on programming languages like Basic, Pascal, and C, but R had baffled me time to time. So to give a better lecture, I tried many books. But most of the book I could bought or lent could not help me because most of them were like cookbooks, they talked about how to do certain things but never game me hints on why. The codes from those cookbooks could be of enormous help if it could solve the problem at hand, but most of the times those codes needed to be modified to fit the needs of the research. If those situations happen, and if any of the codes have started to work off the expectation, those cookbooks were of no help. I had to be awake all night working on the codes to work properly and as expected. In the meanwhile, I happened to know a book by Spector, and it was a goldmine. Most of the questions I had with the grammar of R were solved. So I started to write about that and other things from my experience with R.
+
+Let me show you how complicated the grammar of R is. For example, to have access to a part of a data structure called data frame, I can use any of the followings.
+
+`df[1]`, `df["colname"]`, `df[["colname"]]`, `df[[1]]`, `df[1,2]`, `df["rowname", "colname"]`, `df$colname`, `df[df$colname>1,]`
+
+The same form can be used for other data structures like matrices and lists, but sometimes it does not work for other data structures. But what is the principle that can tell me what is possible and what is not? Most books did not answer the question. They just told me that if I follow the instructions I will get the result. But if I could not understand the principle, I have no choice but to memorize all the exceptions, but the number of cases are huge! If I do not understand the basic principle, it is a sheer fact that I will make mistakes handling them. Syntactic errors are benign but the logical errors are the ones that can make me work overnight.
+
+The classic book on R by Spector showed that there was a systematic explanation on how things work in R. Most of explanation I wrote on vectors, matrices and data frames are the ones I adopted from his book. I also give credit to a book by Hadley.
+
+Back to writing a book, I finished some part of it, but I could not be satistified. I wanted something more but I lack the competence and time so I could not publish it. I tried at some time ever since, but time and health prevented me from completing the book. In fact, R is ever expanding, and I guess no one can know it all. And R has gone through a lot of change in it ecology.
+
+But I gave a lecture on R at Universities working hard on lecture notes and I see a lot of books that seems to be incomplete to my standards so I finally had the courage to publish the book to give out the knowledge and the expericence from all those years using R. My goal is to publish a book on R that is sytematic and efficient in teaching R.
+
+Going to a goal without a map is difficult and time consuing but if there is a guide, a good guide, it could be a lot easier. Those different ways of accessing a data frame could be understood easily with a proper knowledge of R's data structure and method of accessing it. I tried my best to unveil the simplicity underneath the seeming complicated grammatical structure of R. I wanted to tell the world.
+
+"**I could be a lot easier if you could see the whole picture and the context**"
+
+I would like to see more people to use R more easily and more efficiently, to get the result they want.
+
+I got a lot of help writing this book. I would like to thank all the R package creators, maintainers, and the contributors of `stackoverflow.com` and `stats.stackexchange.com`. And I would like to thank my parents and my family for all the support they give me.
+
+\thispagestyle{empty}
+
+\vfill
+
+\hfill KwonHyun Kim
+
+\hfill 2019.2.15
+
+\vfill
+
+\vfill
+
+\vfill
+
+\linespread{1.2}\selectfont
+
+
+
+
+
+
+
+
+
+
+
